@@ -16,14 +16,25 @@
                 class="slds-m-bottom_small">
             </lightning-button>
 
+            <!-- Display waiting image when no status or error message is present -->
+            <template if:true={isWaiting}>
+                <div class="slds-box slds-theme_default slds-m-top_small">
+                    <img src={statusImage} alt="Status Image" class="status-image" />
+                </div>
+            </template>
+
+            <!-- Display status image and message if shipment status is present -->
             <template if:true={shipmentStatus}>
                 <div class="slds-box slds-theme_info slds-m-top_small">
+                    <img src={statusImage} alt="Status Image" class="status-image" />
                     <strong>Status:</strong> <span>{shipmentStatus}</span>
                 </div>
             </template>
 
+            <!-- Display status image and error message if error message is present -->
             <template if:true={errorMessage}>
                 <div class="slds-box slds-theme_error slds-m-top_small">
+                    <img src={statusImage} alt="Status Image" class="status-image" />
                     <strong>Error:</strong> <span>{errorMessage}</span>
                 </div>
             </template>

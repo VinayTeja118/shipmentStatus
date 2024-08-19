@@ -1,0 +1,6 @@
+.status-image {
+    width: 140px; /* Adjust width as needed */
+    height: 140px; /* Adjust height as needed */
+    vertical-align: middle; /* Aligns the image vertically in the middle of the text */
+    margin-right: 10px; /* Adds space between the image and the text */
+}
