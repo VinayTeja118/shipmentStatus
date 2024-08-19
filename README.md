@@ -1,18 +1,32 @@
-# Salesforce DX Project: Next Steps
+# Shipment Status LWC
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
 
-## How Do You Plan to Deploy Your Changes?
+The **Shipment Status LWC** is a Lightning Web Component designed for Merz Aesthetics Customer Service representatives. This component allows users to quickly check the status of customer shipments based on their tracking numbers. It communicates with a mock shipping status service and provides real-time feedback on shipment status.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Features
 
-## Configure Your Salesforce DX Project
+- **User-Friendly Input**: An input field for entering tracking numbers.
+- **Status Retrieval**: A button to fetch the shipment status based on the entered tracking number.
+- **Error Handling**: Displays informative error messages if the tracking number is not provided or if there are issues with the request.
+- **Responsive Design**: Optimized for use in Salesforce Lightning Experience, providing a seamless user experience.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Technology Stack
 
-## Read All About It
+- **Salesforce Lightning Web Components (LWC)**: Utilizes the latest Salesforce technology for building modern UI components.
+- **Apex**: Backend service is implemented using Apex to handle the logic for fetching shipment statuses.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Setup Instructions
+
+### Prerequisites
+
+- Salesforce Developer Org
+- Visual Studio Code
+- Salesforce CLI installed
+
+### Cloning the Repository
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/ShipmentStatusLWC.git
+   cd ShipmentStatusLWC
